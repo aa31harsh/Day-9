@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Function Types Output</title>
+</head>
+<body>
+  <h2>Function Types Output:</h2>
+  <pre id="output"></pre>
+
+  <script>
+    const output = document.getElementById('output');
+
+    // Helper to print text inside <pre>
+    function print(text) {
+      output.textContent += text + '\n';
+    }
+
+    // Normal Function
+    function normalFunction() {
+      print("normal");
+    }
+    normalFunction();
+
+    // Anonymous Function
+    const anonymousFunction = function () {
+      print("anonymous");
+    };
+    anonymousFunction();
+
+    // Named Function Expression
+    const namedFunction = function namedExpr() {
+      print("named");
+    };
+    namedFunction();
+
+    // Arrow Function
+    const arrowFunction = () => print("arrow");
+    arrowFunction();
+
+    // Higher-Order Function with callback
+    function higherOrderFunction(callback) {
+      print("higher-order");
+      callback();
+    }
+    higherOrderFunction(() => print("callback"));
+
+    // IIFE (Immediately Invoked Function Expression)
+    (function () {
+      print("IIFE");
+    })();
+
+    // Arrow IIFE
+    (() => print("arrow IIFE"))();
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Methods</title>
+</head>
+<body>
+  <script>
+    let str = "  Hello JavaScript World  ";
+    document.write("<b>Original String:</b> '" + str + "'<br><br>");
+
+    document.write("length: " + str.length + "<br>");
+    document.write("toUpperCase(): " + str.toUpperCase() + "<br>");
+    document.write("toLowerCase(): " + str.toLowerCase() + "<br>");
+    document.write("trim(): '" + str.trim() + "'<br>");
+    document.write("slice(2, 7): " + str.slice(2, 7) + "<br>");
+    document.write("substring(2, 7): " + str.substring(2, 7) + "<br>");
+    document.write("substr(2, 5): " + str.substr(2, 5) + "<br>");
+    document.write("charAt(6): " + str.charAt(6) + "<br>");
+    document.write("indexOf('JavaScript'): " + str.indexOf("JavaScript") + "<br>");
+    document.write("lastIndexOf('l'): " + str.lastIndexOf("l") + "<br>");
+    document.write("includes('Java'): " + str.includes("Java") + "<br>");
+    document.write("startsWith('  He'): " + str.startsWith("  He") + "<br>");
+    document.write("endsWith('World  '): " + str.endsWith("World  ") + "<br>");
+    document.write("replace('JavaScript', 'JS'): " + str.replace("JavaScript", "JS") + "<br>");
+    document.write("repeat(2): " + str.repeat(2) + "<br>");
+    document.write("split(' '): " + str.split(" ") + "<br>");
+    document.write("padStart(30, '*'): " + str.trim().padStart(30, '*') + "<br>");
+    document.write("padEnd(30, '*'): " + str.trim().padEnd(30, '*') + "<br>");
+  </script>
+</body>
+</html>
